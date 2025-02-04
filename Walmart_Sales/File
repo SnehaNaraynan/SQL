@@ -1,0 +1,20 @@
+# Walmart Sales 
+## Project Overview
+
+This project analyzes Walmart sales data sourced from Kaggle to uncover key business insights. The workflow involves:
+
+Loading the dataset into VS Code/Python enironment using Kaggle API.
+
+Cleaning and preprocessing the data using Python (pandas, seaborn, matplotlib).
+
+Connecting PostgreSQL using psycopg2 and SQLAlchemy.
+
+Running SQL queries on the cleaned dataset to extract business insights.
+
+## Tech Stack
+
+Programming Languages: Python, SQL
+
+Libraries & Tools: Pandas, Seaborn, Matplotlib, Psycopg2, SQLAlchemy
+
+Database: PostgreSQL
