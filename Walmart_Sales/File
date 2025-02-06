@@ -1,20 +1,63 @@
-# Walmart Sales 
 ## Project Overview
 
 This project analyzes Walmart sales data sourced from Kaggle to uncover key business insights. The workflow involves:
 
-Loading the dataset into VS Code/Python enironment using Kaggle API.
+1) Loading the dataset into VS Code using Kaggle API.
 
-Cleaning and preprocessing the data using Python (pandas, seaborn, matplotlib).
+2) Cleaning and preprocessing the data using Python (pandas, seaborn, matplotlib).
 
-Connecting PostgreSQL using psycopg2 and SQLAlchemy.
+3) Connecting PostgreSQL using psycopg2 and SQLAlchemy.
 
-Running SQL queries on the cleaned dataset to extract business insights.
+4) Running SQL queries on the cleaned dataset to extract business insights.
 
-## Tech Stack
+Tech Stack
 
 Programming Languages: Python, SQL
 
 Libraries & Tools: Pandas, Seaborn, Matplotlib, Psycopg2, SQLAlchemy
 
 Database: PostgreSQL
+
+## Dataset: https://www.kaggle.com/datasets/najir0123/walmart-10k-sales-datasets
+
+The dataset consists of Walmart sales records with the following columns:
+
+date: Date of transaction
+
+branch: Store location
+
+payment_method: Type of payment used
+
+category: Product category
+
+unit_price: Price per unit
+
+quantity: Quantity sold
+
+rating: Customer rating
+
+time: Time of transaction
+
+Data Cleaning & Preprocessing
+
+The dataset undergoes the following transformations:
+
+Data Inspection: Check shape, types, duplicates, and missing values.
+
+Handling Missing Values:
+
+Convert unit_price from object to float.
+
+Fill missing unit_price and quantity with mean values.
+
+Duplicate Removal: Identified and dropped 51 duplicate rows.
+
+Feature Engineering:
+
+Created total column: total = unit_price * quantity.
+
+Database Setup
+
+The cleaned dataset is stored in PostgreSQL using SQLAlchemy.
+
+Business Insights were gathered using SQL queries in Postgresql/Mysql
